@@ -1,6 +1,6 @@
 // models/skills.js
 
-const skill = [
+const skills = [
   {id: 101, skillName: "HTML", level: "Proficient"},
   {id: 102, skillName: "CSS", level: "Intermediate"},
   {id: 105, skillName: "JavaScript", level: "Intermediate"},
