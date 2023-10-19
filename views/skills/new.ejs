@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<!-- Form to add new skill -->
+<form action="/skills" method="POST">
+    <label>
+        Dev Skill ID
+        <input type="text" name="id">
+    </label><br><br>
+    <label>
+        Dev Skill
+        <input type="text" name="skillName">
+    </label><br><br>
+    <label>
+        Proficiency Level
+        <input type="text" name="level">
+    </label><br><br>
+    <button type="submit">Add Skill</button>
+</form>
+
+<%- include('../partials/footer') %>

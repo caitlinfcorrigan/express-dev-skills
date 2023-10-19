@@ -2,4 +2,8 @@
 
     <h3>I am a <%= skill.level.toLowerCase() %> <%= skill.skillName %> programmer.</h3>
 
+    <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST" class="delete-form">
+        <button type="submit">Delete Skill</button>
+    </form>
+
 <%- include('../partials/footer') %>

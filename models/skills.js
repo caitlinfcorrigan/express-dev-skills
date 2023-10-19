@@ -11,8 +11,21 @@ const skills = [
   
     module.exports = {
       getAll,
-      getOne
+      getOne,
+      create,
+      deleteOne
     };
+
+    function deleteOne(id) {
+      id = parseInt(id);
+      let idx = skills.findIndex(skill => skill.id === id);
+      console.log(id)
+      skills.splice(idx, 1);
+    }
+
+    function create(newSkill) {
+      skills.push(newSkill)
+    }
   
     function getOne (id) {
       id = parseInt(id);
